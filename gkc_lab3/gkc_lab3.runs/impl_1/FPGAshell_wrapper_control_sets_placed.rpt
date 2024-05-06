@@ -1,0 +1,213 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sun Apr 28 09:02:05 2024
+| Host         : LAPTOP-PCMTTM99 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file FPGAshell_wrapper_control_sets_placed.rpt
+| Design       : FPGAshell_wrapper
+| Device       : xc7a200t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   135 |
+|    Minimum number of control sets                        |   135 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    16 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   135 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |   131 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     0 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              13 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               4 |            3 |
+| Yes          | No                    | No                     |            1024 |          331 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              31 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------+----------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                Enable Signal                |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------------------+----------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | shell/result_correct_i_1_n_0                | shell/dut/mat_module/reset |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                             | shell/dut/mat_module/reset |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG | shell/dut/memory_module/mem_ext/E[0]        | shell/dut/mat_module/reset |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_1[7]_i_1_n_0  |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_20[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_22[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_23[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_18[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_21[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_25[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_27[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_14[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_16[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_15[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_17[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_19[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_24[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_14[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_11[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_13[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_10[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_0[7]_i_1_n_0  |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_12[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_63[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_7[7]_i_1_n_0  |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_8[7]_i_1_n_0  |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_11[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_43[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_28[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_39[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_44[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_0[7]_i_1_n_0  |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_13[7]_i_1_n_0 |                            |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_16[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_18[7]_i_1_n_0 |                            |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_4[7]_i_1_n_0  |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_62[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_3[7]_i_1_n_0  |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_1[7]_i_1_n_0  |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_41[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_20[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_21[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_23[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_56[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_38[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_6[7]_i_1_n_0  |                            |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_24[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_61[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_36[7]_i_1_n_0 |                            |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_37[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_55[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_22[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_25[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_47[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_29[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_54[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_35[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_51[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_19[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_5[7]_i_1_n_0  |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_52[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_49[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_60[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_2[7]_i_1_n_0  |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_53[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_42[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_59[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_9[7]_i_1_n_0  |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_10[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_12[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_34[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_15[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_32[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_17[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_30[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_33[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_46[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_50[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_40[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_48[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_31[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_45[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_57[7]_i_1_n_0 |                            |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_58[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_44[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_51[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_9[7]_i_1_n_0  |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_30[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_33[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_35[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_54[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_29[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_63[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_56[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_39[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_31[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_27[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_36[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_42[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_38[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_40[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_4[7]_i_1_n_0  |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_52[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_62[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_34[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_43[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_47[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_50[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_32[7]_i_1_n_0 |                            |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_53[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_60[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_61[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_59[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_48[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_26[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_37[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_49[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_45[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_28[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_57[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_46[7]_i_1_n_0 |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_5[7]_i_1_n_0  |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_7[7]_i_1_n_0  |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_8[7]_i_1_n_0  |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_41[7]_i_1_n_0 |                            |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_6[7]_i_1_n_0  |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_58[7]_i_1_n_0 |                            |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_55[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_3[7]_i_1_n_0  |                            |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | shell/_GEN_17                               | shell/dut/mat_module/reset |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | shell/_GEN_16                               | shell/dut/mat_module/reset |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matA_buf_26[7]_i_1_n_0 |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/_GEN_26                | shell/dut/mat_module/reset |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | shell/dut/mat_module/matB_buf_2[7]_i_1_n_0  |                            |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG |                                             |                            |                5 |             13 |         2.60 |
++----------------+---------------------------------------------+----------------------------+------------------+----------------+--------------+
+
+

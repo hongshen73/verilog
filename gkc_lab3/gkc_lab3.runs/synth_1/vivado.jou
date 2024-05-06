@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Apr 28 09:00:26 2024
+# Process ID: 41008
+# Current directory: D:/vivado/gkc_lab3/gkc_lab3.runs/synth_1
+# Command line: vivado.exe -log FPGAshell_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPGAshell_wrapper.tcl
+# Log file: D:/vivado/gkc_lab3/gkc_lab3.runs/synth_1/FPGAshell_wrapper.vds
+# Journal file: D:/vivado/gkc_lab3/gkc_lab3.runs/synth_1\vivado.jou
+# Running On: LAPTOP-PCMTTM99, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16781 MB
+#-----------------------------------------------------------
+source FPGAshell_wrapper.tcl -notrace

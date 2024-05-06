@@ -1,0 +1,596 @@
+
+*** Running vivado
+    with args -log FPGAshell_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPGAshell_wrapper.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source FPGAshell_wrapper.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/vivado/gkc_lab3/gkc_lab3.srcs/utils_1/imports/synth_1/FPGAshell_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/vivado/gkc_lab3/gkc_lab3.srcs/utils_1/imports/synth_1/FPGAshell_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top FPGAshell_wrapper -part xc7a200tfbg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 41620
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1358.391 ; gain = 441.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FPGAshell_wrapper' [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:3170]
+INFO: [Synth 8-6157] synthesizing module 'FPGAshell' [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:2516]
+INFO: [Synth 8-6157] synthesizing module 'MM_TOP' [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:2476]
+INFO: [Synth 8-6157] synthesizing module 'MatMem' [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'mem_192x32' [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'mem_192x32' (0#1) [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:59]
+INFO: [Synth 8-6155] done synthesizing module 'MatMem' (0#1) [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'MatMulModule' [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:151]
+INFO: [Synth 8-6157] synthesizing module 'AdderTree' [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:129]
+INFO: [Synth 8-6155] done synthesizing module 'AdderTree' (0#1) [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:129]
+INFO: [Synth 8-6155] done synthesizing module 'MatMulModule' (0#1) [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:151]
+INFO: [Synth 8-6155] done synthesizing module 'MM_TOP' (0#1) [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:2476]
+INFO: [Synth 8-6155] done synthesizing module 'FPGAshell' (0#1) [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:2516]
+INFO: [Synth 8-6155] done synthesizing module 'FPGAshell_wrapper' (0#1) [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:3170]
+WARNING: [Synth 8-6014] Unused sequential element _RW0_ren_d0_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:74]
+WARNING: [Synth 8-6014] Unused sequential element _RW0_rmode_d0_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:75]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_3_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:684]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_4_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:684]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_5_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:684]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_6_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:689]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_7_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:689]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_8_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:689]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_9_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:694]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_10_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:694]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_11_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:695]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_12_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:700]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_13_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:700]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_14_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:701]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_15_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:706]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_16_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:706]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_17_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:707]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_18_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:712]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_19_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:712]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_20_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:713]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_21_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:718]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_22_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:718]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_23_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:719]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_24_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:724]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_25_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:724]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_26_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:725]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_27_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:730]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_28_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:730]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_29_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:731]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_30_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:736]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_31_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:736]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_32_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:737]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_33_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:742]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_34_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:742]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_35_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:743]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_36_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:748]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_37_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:748]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_38_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:749]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_39_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:754]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_40_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:754]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_41_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:755]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_42_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:760]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_43_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:760]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_44_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:761]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_45_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:766]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_46_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:766]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_47_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:767]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_48_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:772]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_49_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:772]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_50_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:773]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_51_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:778]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_52_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:778]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_53_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:779]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_54_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:784]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_55_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:784]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_56_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:785]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_57_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:790]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_58_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:790]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_59_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:791]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_60_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:796]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_61_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:796]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_62_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:797]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_63_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:802]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_64_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:802]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_65_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:803]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_66_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:808]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_67_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:808]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_68_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:809]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_69_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:814]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_70_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:814]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_71_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:815]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_72_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:820]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_73_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:820]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_74_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:821]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_75_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:826]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_76_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:826]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_77_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:827]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_78_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:832]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_79_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:832]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_80_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:833]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_81_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:838]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_82_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:838]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_83_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:839]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_84_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:844]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_85_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:844]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_86_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:845]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_87_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:850]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_88_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:850]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_89_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:851]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_90_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:856]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_91_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:856]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_92_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:857]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_93_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:862]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_94_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:862]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_95_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:863]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_96_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:868]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_97_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:868]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_98_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:869]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_99_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:874]
+WARNING: [Synth 8-6014] Unused sequential element en_load_REG_100_reg was removed.  [D:/vivado/gkc_lab3/gkc_lab3.srcs/sources_1/new/FPGAshell.sv:874]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port io_dataIn[31] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[30] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[29] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[28] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[27] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[26] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[25] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[24] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[23] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[22] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[21] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[20] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[19] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[18] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[17] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[16] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[15] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[14] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[13] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[12] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[11] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[10] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[9] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[8] in module MatMulModule is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1501.922 ; gain = 584.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1501.922 ; gain = 584.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1501.922 ; gain = 584.602
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1501.922 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/vivado/gkc_lab3/gkc_lab3.srcs/constrs_1/new/FPGAshell.xdc]
+Finished Parsing XDC File [D:/vivado/gkc_lab3/gkc_lab3.srcs/constrs_1/new/FPGAshell.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado/gkc_lab3/gkc_lab3.srcs/constrs_1/new/FPGAshell.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FPGAshell_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FPGAshell_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1604.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1604.199 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1604.199 ; gain = 686.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1604.199 ; gain = 686.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1604.199 ; gain = 686.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MatMulModule'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FPGAshell'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                  iSTATE |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'MatMulModule'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                         00000001 |                              000
+                 iSTATE6 |                         00000010 |                              001
+                 iSTATE3 |                         00001000 |                              010
+                 iSTATE2 |                         00010000 |                              011
+                 iSTATE1 |                         00100000 |                              100
+                 iSTATE5 |                         00000100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'FPGAshell'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1604.199 ; gain = 686.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input   35 Bit       Adders := 1     
+	   2 Input   34 Bit       Adders := 1     
+	   2 Input   33 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 134   
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	               8x32  Multipliers := 8     
++---RAMs : 
+	               6K Bit	(192 X 32 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 6     
+	   4 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 13    
+	   4 Input    1 Bit        Muxes := 3     
+	   6 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP io_inputs_00, operation Mode is: A*B.
+DSP Report: operator io_inputs_00 is absorbed into DSP io_inputs_00.
+DSP Report: operator io_inputs_00 is absorbed into DSP io_inputs_00.
+DSP Report: Generating DSP io_inputs_00, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator io_inputs_00 is absorbed into DSP io_inputs_00.
+DSP Report: operator io_inputs_00 is absorbed into DSP io_inputs_00.
+DSP Report: Generating DSP io_inputs_10, operation Mode is: A*B.
+DSP Report: operator io_inputs_10 is absorbed into DSP io_inputs_10.
+DSP Report: operator io_inputs_10 is absorbed into DSP io_inputs_10.
+DSP Report: Generating DSP io_inputs_10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator io_inputs_10 is absorbed into DSP io_inputs_10.
+DSP Report: operator io_inputs_10 is absorbed into DSP io_inputs_10.
+DSP Report: Generating DSP io_inputs_20, operation Mode is: A*B.
+DSP Report: operator io_inputs_20 is absorbed into DSP io_inputs_20.
+DSP Report: operator io_inputs_20 is absorbed into DSP io_inputs_20.
+DSP Report: Generating DSP io_inputs_20, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator io_inputs_20 is absorbed into DSP io_inputs_20.
+DSP Report: operator io_inputs_20 is absorbed into DSP io_inputs_20.
+DSP Report: Generating DSP io_inputs_30, operation Mode is: A*B.
+DSP Report: operator io_inputs_30 is absorbed into DSP io_inputs_30.
+DSP Report: operator io_inputs_30 is absorbed into DSP io_inputs_30.
+DSP Report: Generating DSP io_inputs_30, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator io_inputs_30 is absorbed into DSP io_inputs_30.
+DSP Report: operator io_inputs_30 is absorbed into DSP io_inputs_30.
+DSP Report: Generating DSP io_inputs_40, operation Mode is: A*B.
+DSP Report: operator io_inputs_40 is absorbed into DSP io_inputs_40.
+DSP Report: operator io_inputs_40 is absorbed into DSP io_inputs_40.
+DSP Report: Generating DSP io_inputs_40, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator io_inputs_40 is absorbed into DSP io_inputs_40.
+DSP Report: operator io_inputs_40 is absorbed into DSP io_inputs_40.
+DSP Report: Generating DSP io_inputs_50, operation Mode is: A*B.
+DSP Report: operator io_inputs_50 is absorbed into DSP io_inputs_50.
+DSP Report: operator io_inputs_50 is absorbed into DSP io_inputs_50.
+DSP Report: Generating DSP io_inputs_50, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator io_inputs_50 is absorbed into DSP io_inputs_50.
+DSP Report: operator io_inputs_50 is absorbed into DSP io_inputs_50.
+DSP Report: Generating DSP io_inputs_60, operation Mode is: A*B.
+DSP Report: operator io_inputs_60 is absorbed into DSP io_inputs_60.
+DSP Report: operator io_inputs_60 is absorbed into DSP io_inputs_60.
+DSP Report: Generating DSP io_inputs_60, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator io_inputs_60 is absorbed into DSP io_inputs_60.
+DSP Report: operator io_inputs_60 is absorbed into DSP io_inputs_60.
+DSP Report: Generating DSP io_inputs_70, operation Mode is: A*B.
+DSP Report: operator io_inputs_70 is absorbed into DSP io_inputs_70.
+DSP Report: operator io_inputs_70 is absorbed into DSP io_inputs_70.
+DSP Report: Generating DSP io_inputs_70, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator io_inputs_70 is absorbed into DSP io_inputs_70.
+DSP Report: operator io_inputs_70 is absorbed into DSP io_inputs_70.
+WARNING: [Synth 8-7129] Port io_dataIn[31] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[30] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[29] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[28] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[27] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[26] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[25] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[24] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[23] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[22] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[21] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[20] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[19] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[18] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[17] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[16] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[15] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[14] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[13] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[12] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[11] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[10] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[9] in module MatMulModule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port io_dataIn[8] in module MatMulModule is either unconnected or has no load
+RAM Pipeline Warning: Read Address Register Found For RAM shell/dut/memory_module/mem_ext/Memory_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM shell/dut/memory_module/mem_ext/Memory_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM shell/dut/memory_module/mem_ext/Memory_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-3332] Sequential element (shell/FSM_onehot_state_reg[7]) is unused and will be removed from module FPGAshell_wrapper.
+WARNING: [Synth 8-3332] Sequential element (shell/FSM_onehot_state_reg[6]) is unused and will be removed from module FPGAshell_wrapper.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:27 . Memory (MB): peak = 1604.199 ; gain = 686.879
+---------------------------------------------------------------------------------
+ Sort Area is  io_inputs_00_0 : 0 0 : 1623 3199 : Used 1 time 0
+ Sort Area is  io_inputs_00_0 : 0 1 : 1576 3199 : Used 1 time 0
+ Sort Area is  io_inputs_10_3 : 0 0 : 1623 3199 : Used 1 time 0
+ Sort Area is  io_inputs_10_3 : 0 1 : 1576 3199 : Used 1 time 0
+ Sort Area is  io_inputs_20_4 : 0 0 : 1623 3199 : Used 1 time 0
+ Sort Area is  io_inputs_20_4 : 0 1 : 1576 3199 : Used 1 time 0
+ Sort Area is  io_inputs_30_5 : 0 0 : 1623 3199 : Used 1 time 0
+ Sort Area is  io_inputs_30_5 : 0 1 : 1576 3199 : Used 1 time 0
+ Sort Area is  io_inputs_40_6 : 0 0 : 1623 3199 : Used 1 time 0
+ Sort Area is  io_inputs_40_6 : 0 1 : 1576 3199 : Used 1 time 0
+ Sort Area is  io_inputs_50_7 : 0 0 : 1623 3199 : Used 1 time 0
+ Sort Area is  io_inputs_50_7 : 0 1 : 1576 3199 : Used 1 time 0
+ Sort Area is  io_inputs_60_8 : 0 0 : 1623 3199 : Used 1 time 0
+ Sort Area is  io_inputs_60_8 : 0 1 : 1576 3199 : Used 1 time 0
+ Sort Area is  io_inputs_70_9 : 0 0 : 1623 3199 : Used 1 time 0
+ Sort Area is  io_inputs_70_9 : 0 1 : 1576 3199 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------------+------------------------+---------------+----------------+
+|Module Name       | RTL Object             | Depth x Width | Implemented As | 
++------------------+------------------------+---------------+----------------+
+|FPGAshell_wrapper | shell/mem_addr_reg_rep | 256x18        | Block RAM      | 
+|FPGAshell_wrapper | shell/rom_addr_reg_rep | 256x18        | Block RAM      | 
++------------------+------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name       | RTL Object                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|FPGAshell_wrapper | shell/dut/memory_module/mem_ext/Memory_reg | 192 x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MatMulModule | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | (PCIN>>17)+A*B | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | (PCIN>>17)+A*B | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | (PCIN>>17)+A*B | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | (PCIN>>17)+A*B | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | (PCIN>>17)+A*B | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | (PCIN>>17)+A*B | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | (PCIN>>17)+A*B | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | (PCIN>>17)+A*B | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:38 . Memory (MB): peak = 1604.199 ; gain = 686.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1621.754 ; gain = 704.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name       | RTL Object                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|FPGAshell_wrapper | shell/dut/memory_module/mem_ext/Memory_reg | 192 x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------------+--------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance shell/dut/memory_module/mem_ext/Memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance shell/dut/memory_module/mem_ext/Memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance shell/mem_addr_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance shell/mem_addr_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:47 . Memory (MB): peak = 1621.754 ; gain = 704.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:52 . Memory (MB): peak = 1621.754 ; gain = 704.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:52 . Memory (MB): peak = 1621.754 ; gain = 704.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:53 . Memory (MB): peak = 1621.754 ; gain = 704.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:53 . Memory (MB): peak = 1621.754 ; gain = 704.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:53 . Memory (MB): peak = 1621.754 ; gain = 704.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:53 . Memory (MB): peak = 1621.754 ; gain = 704.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MatMulModule | A*B          | 17     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | PCIN>>17+A*B | 15     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B          | 17     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | PCIN>>17+A*B | 15     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B          | 17     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | PCIN>>17+A*B | 15     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B          | 17     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | PCIN>>17+A*B | 15     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B          | 17     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | PCIN>>17+A*B | 15     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B          | 17     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | PCIN>>17+A*B | 15     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B          | 17     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | PCIN>>17+A*B | 15     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | A*B          | 17     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MatMulModule | PCIN>>17+A*B | 15     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    35|
+|3     |DSP48E1  |    16|
+|4     |LUT1     |     2|
+|5     |LUT2     |    85|
+|6     |LUT3     |    70|
+|7     |LUT4     |    56|
+|8     |LUT5     |   209|
+|9     |LUT6     |   494|
+|10    |RAMB18E1 |     2|
+|12    |FDRE     |  1071|
+|13    |FDSE     |     1|
+|14    |IBUF     |     4|
+|15    |OBUF     |     2|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:53 . Memory (MB): peak = 1621.754 ; gain = 704.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:50 . Memory (MB): peak = 1621.754 ; gain = 602.156
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:53 . Memory (MB): peak = 1621.754 ; gain = 704.434
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1621.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'FPGAshell_wrapper' is not ideal for floorplanning, since the cellview 'MatMulModule' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1621.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Synth Design complete | Checksum: f993c0e7
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 152 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1621.754 ; gain = 1151.324
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1621.754 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vivado/gkc_lab3/gkc_lab3.runs/synth_1/FPGAshell_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FPGAshell_wrapper_utilization_synth.rpt -pb FPGAshell_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 28 09:01:30 2024...
